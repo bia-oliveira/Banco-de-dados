@@ -7,7 +7,7 @@ app.use(express.urlencoded({extended: false}));
 
 
 app.get('/', function(req, res) {
-    db.query("SELECT * FROM Produtos", function(err, dado) {
+    db.query("SELECT Produtos.Nome AS NomeProduto, Produtos.Preco, Produtos.Categoria, Marcas.Nome AS NomeMarca, Marcas.Pais_Origem FROM Produtos INNER JOIN Marcas ON Produtos.Marca_ID = Marcas.ID ORDER BY Produtos.Nome;", function(err, dado) {
     res.render('index.ejs', {
     dados: dado
     });

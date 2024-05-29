@@ -5,7 +5,7 @@ var conexao = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: '',
-  database: 'PROJETO',
+  database: 'MAQUIAGEM',
   multipleStatements: true
 });
 //executar conexao com BD

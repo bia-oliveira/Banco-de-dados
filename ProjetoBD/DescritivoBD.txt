@@ -1,0 +1,1 @@
+Banco de dados para gerenciar informações relacionadas a produtos de maquiagem, incluindo detalhes sobre os produtos, marcas, e estoque. Esse banco de dados será útil para uma loja de cosméticos, um e-commerce ou um profissional de maquiagem para organizar e consultar informações de forma eficiente.

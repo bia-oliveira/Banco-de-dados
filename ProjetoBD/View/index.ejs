@@ -1,1 +1,17 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Página com Node.js</title>
+</head>
+<body>
+    <% for (var i=0; i < dados.length; i++) { %>
+        <li> 
+            <strong>Produto:</strong> <%= dados[i].NomeProduto %> <br>
+            <strong>Preço:</strong> R$ <%= dados[i].Preco.toFixed(2) %> <br>
+            <strong>Categoria:</strong> <%= dados[i].Categoria %> <br>
+            <strong>Marca:</strong> <%= dados[i].NomeMarca %> <br>
+            <strong>País de Origem:</strong> <%= dados[i].Pais_Origem %>
+        </li>
+    <% } %>
+</body>
+</html>
